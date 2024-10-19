@@ -6,43 +6,45 @@
   <title>fareedxtee Calc-Project</title>
   <link rel="stylesheet" href="style.css" />
   <!--the css and js files created were in another file and so it gave me issues at first.-->
+
 </head>
 <body>
 
   <div class="container">
     <div class="calc-text">
-    <form>
+    <form id="input-section">
       <div class="display">
-        <p type="text" name="display"></p>
+        <input type="text" value="" id="screen" readonly>
       </div>
       <div>
-        <input type="button" value="AC" class="k-other ops">
-        <input type="button" value="DEL" class="k-other ops">
-        <input type="button" value="%" class="k-other ops">
-        <input type="button" value="/" class="k-op ops">
+        <!-- Added the 'zero-sign' class to make the AC button larger & removed the percentage button-->
+        <input type="button" value="AC" class="btn k-other ops zero-sign"> 
+        <input type="button" value="DEL" class="btn k-other ops ">
+        <!-- <input type="button" value="%" class="btn k-other ops"> -->
+        <input type="button" value="/" class="btn k-op ops">
       </div>
       <div>
-        <input type="button" value="7" class="numbers">
-        <input type="button" value="8" class="numbers">
-        <input type="button" value="9" class="numbers">
-        <input type="button" value="x" class="k-op ops">
+        <input type="button" value="7" class="btn numbers">
+        <input type="button" value="8" class="btn numbers">
+        <input type="button" value="9" class="btn numbers">
+        <input type="button" value="*" class="btn k-op ops">
       </div>
       <div>
-        <input type="button" value="4" class="numbers">
-        <input type="button" value="5" class="numbers">
-        <input type="button" value="6" class="numbers">
-        <input type="button" value="-" class="k-op ops">
+        <input type="button" value="4" class="btn numbers">
+        <input type="button" value="5" class="btn numbers">
+        <input type="button" value="6" class="btn numbers">
+        <input type="button" value="-" class="btn k-op ops">
       </div>
       <div>
-        <input type="button" value="1" class="numbers">
-        <input type="button" value="2" class="numbers">
-        <input type="button" value="3" class="numbers">
-        <input type="button" value="+" class="k-op ops">
+        <input type="button" value="1" class="btn numbers">
+        <input type="button" value="2" class="btn numbers">
+        <input type="button" value="3" class="btn numbers">
+        <input type="button" value="+" class="btn k-op ops">
       </div>
       <div>
-        <input type="button" value="0" class="zero-sign" class="numbers">
-        <input type="button" value="." class="numbers">
-        <input type="button" value="=" class="k-op ops">
+        <input type="button" value="0" class="btn zero-sign numbers">
+        <input type="button" value="." class="btn numbers">
+        <input type="button" value="=" class="btn k-op ops" id="compute">
       </div>
     </form>
     </div>
